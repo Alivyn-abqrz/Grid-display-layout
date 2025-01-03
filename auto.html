@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Css Grid : Auto</title>
+  <style>
+    body, html{
+      margin: 0;
+      padding: 0;
+    }
+.main{
+  height: 100vh;
+  background-color: black;
+  color: white;
+  /* grid */
+  display: grid;
+/* auto of content is the size of the div */
+  /* grid-template-columns:1fr auto 1fr auto; */
+  grid-auto-flow: column;
+  grid-auto-columns: 100px;
+
+}
+.div-one {
+  grid-column: 1/2;
+    background: blue;
+  }
+  .div-two {
+    grid-column: 2/3;
+    width: 100px;
+    background-color: green;
+  }
+  .div-three {
+    grid-column: 3/4;
+    background: red;
+  }
+  .div-four {
+    grid-column: 4/5;
+    background: yellow;
+  }
+
+  </style>
+</head>
+<body>
+   <div class="main">
+    <div class="div-one">One 1</div>
+    <div class="div-two">Two 2</div>
+    <div class="div-three">Three 3</div>
+    <div class="div-four">Four 4</div>
+  </div>
+</body>
+</html>
